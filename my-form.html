@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="my-form-style.css">
+  <title>Form</title>
+   <style>
+      datalist{
+        display: flex;
+        justify-content: space-between;
+        width: 160px;
+
+      }
+      option{
+        margin-left: 30px;
+        font-size: 10px;
+         padding: 0;
+      }
+      input[type='range']{
+        width: 200px;
+        margin: 0;
+      }
+   </style>
+</head>
+<body>
+  <a href="./index.html">Home</a>
+  <form>
+     <fieldset>
+       <legend>Personal info</legend>
+       <div class="form-elem">
+        <label for="text">First Name</label>
+        <input id="text" placeholder="input First Name"> 
+      </div>
+      <div class="form-elem">
+        <label for="text">Last Name</label>
+        <input id="text" placeholder="input Last Name"> 
+      </div>
+      <div class="form-elem">
+        <label for="dateloc">Birthday</label>
+        <input type="datetime-local" id="dateloc" cheked>
+     </div>
+     <p style="margin-left: 5em;">Gender</p>
+     <div class="form-elem">
+      <label for="radio">Male</label>
+      <input type="radio" id="radio">
+    </div>
+    <div class="form-elem">
+      <label for="radio">Female</label>
+      <input type="radio" id="radio">
+    </div>
+    <div class="form-elem">
+      <label for="sel">Drive experience</label>
+      <select id="sel" name="experience">
+        <option value="---">---</option>
+        <option value="Looser">Looser</option>
+        <option value="F1">F1</option>
+        <option value="Nascar">Nascar</option>
+        <option value="Dakar Rally">Dakar Rally</option>
+      </select>
+     </div>
+    </fieldset>
+     <fieldset>
+      <legend> Contacts </legend>
+      <div class="form-elem">
+        <label for="email">Email</label>
+        <input type="email" id="email" cheked placeholder="email">
+      </div> 
+      <div class="form-elem">
+        <label for="number">Phone</label>
+        <input type="number" id="number">
+       </div>
+       <div class="textarea">
+        <label for="aria">Adress</label>
+        <textarea id="aria" rows="6" cols="40">
+        </textarea>
+       </div>
+      </fieldset>
+      <fieldset>
+        <legend> Car info </legend>
+        <div class="form-elem">
+          <label for="sel">Brand</label>
+          <select id="sel" name="Brand">
+            <option value="---">---</option>
+            <option value="Alfa-Romeo">Alfa-Romeo</option>
+            <option value="Lamborghini">Lamborghini</option>
+            <option value="Ferrari">Ferrari</option>
+          </select>
+         </div> 
+         <div class="form-elem">
+          <label for="sel">Model</label>
+          <select id="sel" name="Model">
+            <option value="---">---</option>
+            <option value="147">147</option>
+            <option value="159">159</option>
+            <option value="Huracán">Huracán</option>
+            <option value="Gallardo">Gallardo</option>
+            <option value="Ferrari 550">Ferrari 550</option>
+            <option value="812 Superfast">812 Superfast</option>
+          </select>
+         </div>
+         <div class="form-elem">
+          <label for="chb">Used</label>
+          <input type="checkbox" id="chb" cheked>
+        </div>
+          <p>Color</p>
+          <!--Alfa-Romeo,Lamborghini,Ferrari only Red color, or yellow-->
+          <div class="form-elem">
+            <label for="radio">Red</label>
+            <input type="radio" id="radio">
+          </div>
+          <div class="form-elem">
+            <label for="radio">Yellow</label>
+            <input type="radio" id="radio">
+          </div>
+          <div class="form-elem">
+            <label for="radio">Red</label>
+            <input type="radio" id="radio">
+          </div>
+          <div class="form-elem">
+            <label for="radio">Yellow</label>
+            <input type="radio" id="radio">
+          </div>
+          <div class="form-elem">
+            <label for="radio">Red</label>
+            <input type="radio" id="radio">
+          </div>
+          <div class="form-elem">
+            <label for="radio">Yellow</label>
+            <input type="radio" id="radio">
+          </div>
+          <div class="form-elem">
+            <label for="radio">Red</label>
+            <input type="radio" id="radio">
+          </div>
+          <div class="form-elem">
+            <label for="range">Price</label>
+            <input type="range" 
+                   id="range" 
+                   name="price"
+                   min="10"
+                   max="100"
+                   step="10" 
+                   list="money">
+                   <datalist id="money">
+                      <option value="10" label="10"></option>
+                      <option value="20" label="20"></option>
+                      <option value="30" label="30"></option>
+                      <option value="40" label="40"></option>
+                      <option value="50" label="50"></option>
+                      <option value="60" label="60"></option>
+                      <option value="70" label="70"></option>
+                      <option value="80" label="80"></option>
+                   </datalist>   
+                  </fieldset>  
+               </div>
+               <div class="form-elem">
+                <label for="btn"></label>
+                <input type="button" id="btn"value="Cancel">
+              </div>
+              <div class="form-elem">
+                <label for="btn"></label>
+                <input type="button" id="btn"value="Ok">
+              </div>
+  </form>
+</body>
+</html>

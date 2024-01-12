@@ -1,0 +1,58 @@
+body{
+  font-size: 30px;
+}
+div{
+    border: 3px solid rgb(0, 0, 0);
+    background-color: teal;
+}
+[name]{
+    border: 5px solid magenta;
+}
+[name=wi2]{
+  border: 5px solid greenyellow;
+}
+#rgb{
+  background-color:  red;
+}
+.color{
+  width: 300px;
+  height: 150px;
+  background-color: rgb(255, 100, 90, 0.5);
+}
+.l1,.l2,.l3{
+    font-size: 2rem;
+}
+.width1{
+    width: 300px;
+}
+.width2{
+  width: 40vw;
+}
+.width3{
+  width: 40%;
+}
+
+.l1  p{
+  color:rgb(164, 194, 33);
+}
+.width2+div{
+    background-color: rgb(37, 187, 45);
+}
+.width2:hover{
+    background-color: black;
+}
+a:visited{
+  color: red;
+}
+h2:first-child{
+  color: blue;
+}
+p+p::first-line{
+    color:rgb(188, 18, 194);
+    font-size: 40px;
+}
+p:first-child::selection{
+    color:red;
+    background-color: rgb(134, 94, 33);
+    font-size: 60px;
+}

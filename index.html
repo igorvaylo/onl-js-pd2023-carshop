@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ItalyCarShop</title>
+  <style>
+      table,thead,tbody{
+          border: 3px solid rgb(2, 156, 28);
+      }
+      th,td{
+        border: 2px solid rgb(241, 6, 6);
+        text-align: center;
+      }
+
+  </style>
 </head>
 <body>
   <header>
@@ -28,9 +38,11 @@
       <h1>ItalyCarShop</h1>
       <nav> 
         <ul>
-          <li><a href="#alfa">alfa-romeo</a></li>
-          <li><a href="#lambo">lamborghini</a></li>
-          <li><a href="#ferrari">ferrari</a></li>
+          <li><a href="#alfa">Alfa-romeo</a></li>
+          <li><a href="#lambo">Lamborghini</a></li>
+          <li><a href="#ferrari">Ferrari</a></li>
+          <li><a href="#spec">Specifications</a></li>
+          <li><a href="./my-form.html">Form</a></li>
         </ul>
       </nav>
   </header>
@@ -79,6 +91,78 @@
       </article>
       </section>
   </main>
+  <section id="spec">
+  <table>
+     <caption>Cars Specifications</caption>
+       <thead>
+          <tr>
+            <th rowspan="2">Brand</th>
+            <th rowspan="2">Model</th>
+            <th rowspan="2">Country</th>
+            <th colspan="2">Weight kg</th>
+            <th rowspan="2">Max speed</th>
+            <th rowspan="2">Realise year</th>
+          </tr>
+          <tr>
+            <th>empty</th>
+            <th>full</th>
+          </tr>
+       </thead>
+         <tbody>
+            <tr>
+              <td rowspan="2">Alfa Romeo</td>
+              <td>147</td>
+              <td>Italy</td>
+              <td>1200</td>
+              <td>1350</td>
+              <td>208</td>
+              <td>2001</td>
+            </tr>
+            <tr>
+              <td>159</td>
+              <td>Italy</td>
+              <td>1300</td>
+              <td>1650</td>
+              <td>228</td>
+              <td>2007</td>
+            </tr>
+            <tr>
+              <td rowspan="2">lamborghini</td>
+              <td>Huracán</td>
+              <td>Italy</td>
+              <td>1350</td>
+              <td>1540</td>
+              <td>325</td>
+              <td>2014</td>
+            </tr>
+            <tr>
+              <td>Gallardo</td>
+              <td>Italy</td>
+              <td>1500</td>
+              <td>1700</td>
+              <td>315</td>
+              <td>2003</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Ferrari</td>
+              <td>Ferrari 550</td>
+              <td>Italy</td>
+              <td>1500</td>
+              <td>1750</td>
+              <td>315</td>
+              <td>1996</td>
+            </tr>
+            <tr>
+              <td>812 Superfast</td>
+              <td>Italy</td>
+              <td>1525</td>
+              <td>1734</td>
+              <td>340</td>
+              <td>2017</td>
+            </tr>
+         </tbody>
+  </table>
+  </section>
   <footer>
     <article>
       <h4>Italy</h4>

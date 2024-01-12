@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+   <style>
+      datalist{
+        display: flex;
+        justify-content: space-between;
+        width: 160px;
+
+      }
+      option{
+        margin-left: 30px;
+        font-size: 10px;
+         padding: 0;
+      }
+      input[type='range']{
+        width: 200px;
+        margin: 0;
+      }
+   </style>
+</head>
+<body>
+  <a href="./index.html">Home</a>
+  <form>
+     <fieldset>
+       <legend>Personal info</legend>
+       <div class="form-elem">
+        <label for="text">First Name</label>
+        <input id="text" placeholder="input First Name"> 
+      </div>
+      <div class="form-elem">
+        <label for="text">Last Name</label>
+        <input id="text" placeholder="input Last Name"> 
+      </div>
+      
+      <div class="form-elem">
+        <label for="btn">Button</label>
+        <input type="button" id="btn"value="Cancel">
+      </div>
+      <div class="form-elem">
+        <label for="chb">Chekbox</label>
+        <input type="checkbox" id="chb" cheked>
+      </div>
+
+     </fieldset>
+     <fieldset>
+      <legend>
+        Button </legend>
+        <div class="form-elem">
+          <label for="color">color</label>
+          <input type="color" id="color" cheked>
+        </div>
+      </div>
+      <div class="form-elem">
+        <label for="date">date</label>
+        <input type="date" id="date" cheked>
+      
+         </div>
+         <div class="form-elem">
+            <label for="dateloc">date-time</label>
+            <input type="datetime-local" id="dateloc" cheked>
+         </div>
+     </fieldset>
+
+  
+   <div class="form-elem">
+    <label for="email">email</label>
+    <input type="email" id="email" cheked placeholder="email">
+  </div> 
+    <button type="summit">ok</button>
+    <div class="form-elem">
+      <label for="file">file</label>
+      <input type="file" id="file">
+   </div>
+    <div class="form-elem">
+     <label for="image">image</label>
+     <input type="image" id="image" src="./img/alfa-romeo-logo.png" 
+     width="5%">
+    </div>
+    <div class="form-elem">
+      <label for="number">number</label>
+      <input type="number" id="number">
+   </div>
+     <div class="form-elem">
+      <label for="password">password</label>
+      <input type="password" id="password">
+     </div>
+     <div class="form-elem">
+      <label for="radio">green</label>
+      <input type="radio" id="radio">
+    </div>
+    <div class="form-elem">
+      <label for="radio">red</label>
+      <input type="radio" id="radio">
+    </div>
+    <div class="form-elem">
+      <label for="submit">submit</label>
+      <input type="submit" id="submit" value="Save">
+   </div>
+   <div class="form-elem">
+    <label for="range">Price</label>
+    <input type="range" 
+           id="range" 
+           name="price"
+           min="10"
+           max="100"
+           step="10" 
+           list="money">
+           <datalist id="money">
+              <option value="10" label="10"></option>
+              <option value="20" label="20"></option>
+              <option value="30" label="30"></option>
+              <option value="40" label="40"></option>
+              <option value="50" label="50"></option>
+              <option value="60" label="60"></option>
+              <option value="70" label="70"></option>
+              <option value="80" label="80"></option>
+           </datalist>     
+       </div>
+       <div class="textarea">
+        <label for="aria">Aria</label>
+        <textarea id="aria" rows="6" cols="40">
+        </textarea>
+       </div>
+       <div class="form-elem">
+        <label for="sel">Select</label>
+        <select id="sel" name="Model" multiple>
+          <option value="---">---</option>
+          <option value="Alfa">Alfa</option>
+          <option value="lamborghini">lamborghini</option>
+          <option value="ferrari">ferrari</option>
+          <option value="Fiat">Fiat</option>
+        </select>
+       </div>
+
+
+</div>
+  </form>
+</body>
+</html>
